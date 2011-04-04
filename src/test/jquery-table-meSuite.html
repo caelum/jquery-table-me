@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script src="lib/jquery-1.2.6.js"></script>
+	    <script src="lib/jquery.fn.js"></script>
+	    <script src="lib/jquery.print.js"></script>
+	    <script src="lib/screw.builder.js"></script>
+	    <script src="lib/screw.matchers.js"></script>
+	    <script src="lib/screw.events.js"></script>
+	    <script src="lib/screw.behaviors.js"></script>
+	    <script src="lib/smoke.core.js"></script>
+	    <script src="lib/smoke.mock.js"></script>
+	    <script src="lib/smoke.stub.js"></script>
+	    
+	    <script src="../main/js/jquery-table-me.js"></script>
+	    <script src="../main/lib/jquery.pagination.js"></script>
+	    <script src="../main/lib/jquery.tablesorter.min.js"></script>
+	    <script src="jquery-table-meSpec.js"></script>
+	    
+	    <link rel="stylesheet" href="lib/screw.css">
+	</head>
+	<body>
+	
+		<table id="pagedTable">
+		</table>
+		
+		<table id="pagedTableWithEntries">
+			<thead>
+				<tr>
+					<th id="headerShouldBeVisible">header</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr id="shouldBeVisible">
+					<td>shown entry</td>
+				</tr>
+				<tr id="shouldBeHidden">
+					<td>hidden entry</td>
+				</tr>
+			</tbody>
+		</table>
+	
+		<table id="pagedTableWithEntriesWithoutTbody">
+			<tr id="shouldBeVisibleWithoutTbody">
+				<td>shown entry</td>
+			</tr>
+			<tr id="shouldBeHiddenWithoutTbody">
+				<td>hidden entry</td>
+			</tr>
+		</table>
+		
+		<table id="pagedTableSecondPage">
+			<tr id="entry1page1">
+				<td>hidden entry</td>
+			</tr>
+			<tr id="entry2page1">
+				<td>hidden entry</td>
+			</tr>
+			<tr id="entry1page2">
+				<td>shown entry</td>
+			</tr>
+		</table>
+	</body>
+</html>
